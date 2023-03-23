@@ -1,9 +1,10 @@
 /* Menu Dropdown */
 .menu,.submenu { margin: 0;padding: 0;list-style: none;}
 .menu { margin: 50px auto; width: 800px; width: fit-content;}
-.menu > li { background: #000;float: left; position: relative;transform: skewX(25deg);}
-.menu a {   display: block; color: #fff; text-transform: uppercase;
-            text-decoration: none; font-family: Arial, Helvetica;font-size: 14px;}  
+.menu > li { background: #000000;float: left; position: relative;transform: skewX(25deg);border: #EE445F solid 2px;
+}
+.menu a {   display: block; color: #e8e3e3; text-transform: uppercase;font-family: 'Orbitron';letter-spacing:px;
+            text-decoration: none;font-size: 14px;}  
 .menu li:hover { background: #e74c3c;}  
 .menu > li > a { transform: skewX(-25deg); padding: 1em 2em;}
 
@@ -31,7 +32,7 @@
 .menu > li:hover .submenu li:nth-child(odd){transform: skewX(-25deg) translateX(-15px);}
 
 
-/* the upper black one */
+/* the upper grey one */
 body{background:#192226;}
 .navbar-inverse{ background:#222B31;border-bottom:4px solid #EE445F;}
 .navbar-brand{  font:12px Lato;text-transform:uppercase;
@@ -42,6 +43,7 @@ nav.a:hover{color:#FFF;}
 nav.li{position:relative;}
 .navbar-inverse .navbar-toggle{border:none;}
 .navbar-collapse{box-shadow:none;border:none;}
+.navbar-nav {font-family: 'Caveat', cursive;font-size: 20px; margin-left: 31px;}
 .navbar-inverse .navbar-toggle:hover{background:transparent;}
 .navbar-inverse .navbar-toggle:focus{background:transparent;}
 .navbar-inverse .navbar-toggle:active{background:transparent;}
@@ -49,7 +51,7 @@ nav.li{position:relative;}
 .icon-bar{background:#a3bfc6;}  
 .hover{ display:block;position:absolute;width:0%;height:100%;
         top:0px;left:0px;background:#EE445F;z-index:0;opacity:0;}
-        
+img.my-logo{height: 150px;float: right;position:absolute;border: #de3450 solid 5px;box-shadow: #d62644 10px 10px 13px;right: 20px;}        
 @media (max-width: 767px) {
     .nav{padding-bottom:20px;}
     nav.a{padding:12px;}}
