@@ -1,7 +1,7 @@
 /* Menu Dropdown */
 .menu,.submenu { padding: 0;list-style: none;}
-.menu { margin: 50px auto; width: 800px; width: fit-content;margin-right: 450px}
-.menu > li { background: #000000;float: left; position: relative;transform: skewX(25deg);border: #EE445F solid 2px;
+.menu { margin: 50px auto; width: 800px; width: fit-content;margin-right: 350px}
+.menu > li { background: #000000;float: left; position: relative;transform: skewX(25deg);border: #ff002b solid 2px;
 }
 .menu a {   display: block; color: #e8e3e3; text-transform: uppercase;font-family: 'Orbitron';
             text-decoration: none;font-size: 14px;}  
@@ -38,13 +38,20 @@ body{background:#192226;}
 .navbar-brand{  font:12px Lato;text-transform:uppercase;left: -55px;position: relative;
                 color: #fff;letter-spacing:2px;margin-top:2px;}
 .nav{margin-bottom:0px;}
-nav.a{  font-size: 11px ;padding: 16px;color:#a3bfc6;text-transform:uppercase;position:relative;z-index:1000;}
+nav.a{  font-size: 11px ;padding: 16px;color:#edeeee;text-transform:uppercase;position:relative;z-index:1000;}
 nav.a:hover{color:#FFF;}
 nav.li{position:relative;}
 .navbar-inverse .navbar-toggle{border:none;}
 .navbar-collapse{box-shadow:none;border:none;}
-.navbar-nav {font-family: 'Caveat', cursive;font-size: 20px; text-align: center;}
+.navbar-nav {font-family: 'Caveat', cursive;font-size: 20px; text-align: center;margin-left: 100px;}
 .navbar-inverse .navbar-toggle:hover{background:transparent;}
 .navbar-inverse .navbar-toggle:focus{background:transparent;}
 .navbar-inverse .navbar-toggle:active{background:transparent;}
-img.my-logo{height: 150px;float: right;position:absolute;border: #de3450 solid 5px;box-shadow: #d62644 10px 10px 13px;right: 20px;background-color: #000000;}
+img.my-logo{height: 150px;float: right;position:absolute;border: #ff002b solid 5px;box-shadow: #d62644 10px 10px 13px;right: 20px;background-color: #000000;}
+
+/* content */
+.my-pic {display: inline-flex;height: 300px;margin-top: 82px;}
+img.me { width : 300px; height : 300px; border-radius : 146px 0px 119px 0px;position:relative;margin-right: 120px;float: left;border: #ec0d32 double 10px;box-shadow: #a6001c 15px 13px 12px;left: 72px;}
+.text {margin-top:18px}
+span.me {font-family: 'Fasthand', cursive;border: #ff002b double 4px;box-shadow: #a6001c 15px 13px 12px;color: #e8e3e3;font-size: 34px;padding: 5px;height: 70px;margin-top: 50px;}
+p.me {color: #edeeee; font-family: 'Caveat', cursive;line-height: 5em;font-size: 20px;}
