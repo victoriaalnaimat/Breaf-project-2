@@ -1,7 +1,20 @@
+.grids {display: grids;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1.3fr 1.1fr 1.1fr 1.7fr 0.6fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:"body1""body2""body3""body4""footer";}
+
+.body1 { grid-area: body1; }
+.body2 { grid-area: body2; }
+.body3 { grid-area: body3; }
+.body4 { grid-area: body4; }
+.footer { grid-area: footer; }
+
 /* Menu Dropdown */
 .menu,.submenu { padding: 0;list-style: none;}
 .menu { margin: 50px auto; width: 800px; width: fit-content;margin-right: 350px}
-.menu > li { background: #000000;float: left; position: relative;transform: skewX(25deg);border: #ff002b solid 2px;box-shadow: #8d2a3c 15px 13px 12px;
+.menu > li { background: #000000;float: left; position: relative;transform: skewX(25deg);border: #ff002b solid 2px;box-shadow: #5e1212 15px 13px 12px;
 }
 .menu a {   display: block; color: #e8e3e3; text-transform: uppercase;font-family: 'Orbitron';
             text-decoration: none;font-size: 14px;}  
@@ -47,23 +60,31 @@ nav.li{position:relative;}
 .navbar-inverse .navbar-toggle:hover{background:transparent;}
 .navbar-inverse .navbar-toggle:focus{background:transparent;}
 .navbar-inverse .navbar-toggle:active{background:transparent;}
-img.my-logo{height: 150px;float: right;position:absolute;border: #ff002b solid 5px;box-shadow: #d62644 10px 10px 13px;right: 20px;background-color: #000000;}
+img.my-logo{height: 150px;float: right;position:absolute;border: #ff002b solid 5px;box-shadow: #971111 10px 10px 13px;right: 20px;background-color: #000000;}
 
 /* content */
+.content { background-image : url(42a125519a3ffcd127e5ffce6f21a8db.jpg);background-repeat: no-repeat; background-size: cover;height: 550px;}
 .my-pic {display: inline-flex;height: 300px;margin-top: 82px;}
-img.me { width : 300px; height : 300px; border-radius : 146px 0px 119px 0px;position:relative;margin-right: 120px;float: left;border: #ec0d32 double 10px;box-shadow: #a6001c 15px 13px 12px;left: 72px;}
-.text {margin-top: 9px}
-span.me {font-family: 'Fasthand', cursive;border: #ff002b double 4px;box-shadow: #e63c5b 15px 13px 12px;color: #ffffff;font-size: 34px;padding: 5px;height: 70px;margin-top: 50px;background: #000000;line-height: 75px;}
-p.me {color: #edeeee; font-family: 'Caveat', cursive; line-height: 4em;font-size: 20px;}
-p.me3 {color: #a0a9a9; font-family: 'Caveat', cursive; line-height: 1px;font-size: 20px;}
+img.me { width : 300px; height : 300px; border-radius : 146px 0px 119px 0px;position:relative;margin-right: 100px;float: left;border: #ec0d32 double 10px;box-shadow: #76071a 15px 13px 12px;left: 52px;}
+.text {margin-top: 25px}
+span.me {font-family: 'Fasthand', cursive;border: #ff002b double 4px;box-shadow: #5e1212 15px 13px 12px;color: #ffffffb2;font-size: 34px;padding: 5px;height: 70px;margin-top: 50px;background: #00000092;line-height: 75px;}
+p.me {color: #edeeee; font-family: 'Caveat', cursive;margin-top: 30px;font-size: 20px;}
+p.me3 {color: #a0a9a9; font-family: 'Caveat', cursive; line-height: 1px;font-size: 20px;margin-top: -2px;}
+button.btn {text-align: center;display:flex;margin-left: 44%;
+    background: linear-gradient(to bottom, #bf1414, #000000);
+    border-radius: 28px;font-family: Georgia;color: #b5a8a8;
+    font-size: 20px;padding: 10px 20px 10px 20px;
+    border: solid #000000 3px;
+    text-decoration: none;}
+.btn:hover {background: #d1c2c2;text-decoration: none;}
 p.me2 { font-family: 'Fasthand', cursive;font-size: 20px; letter-spacing: 2px;color: #edeeee;line-height: 27px;text-align: center;
-    position: relative;margin-left: 5px;height: 90px;background: linear-gradient(0deg, #000, #272727);padding: 20px;}
+    position: relative;margin-left: 5px;height: 70px;padding: 10px;border: #000000 3px solid;}
 p.me2:before, p.me2:after {content: '';position: absolute;left: -2px;
-        top: -2px;background: linear-gradient(45deg, #fb0094, #1a1a64, #196019,#7e7e15, #ff0000, #fb0094,
-        #0000ff, #00ff00,#5a5a0e, #ff0000);
+        top:2px;background: linear-gradient(45deg, #6d0606, #5b0f18, #0a0204,
+        #940c0c, #160e0a, #6d1515);
         background-size: 400%;width: calc(100% + 4px);height: calc(100% + 4px);
         z-index: -1;animation: steam 20s linear infinite;}
-@keyframes steam {  0% {background-position: 0 0;}
-                    50% {background-position: 400% 0;}
-                    100% {background-position: 0 0;}}
+@keyframes steam {  0% {background-position: 0 0 ;}
+                    50% {background-position: 400% 0 ;}
+                    100% {background-position: 0 0 ;}}
 p.me2:after {filter: blur(50px);}
