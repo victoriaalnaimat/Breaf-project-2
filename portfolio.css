@@ -5,7 +5,7 @@ html {scroll-behavior: smooth;}
 ::-webkit-scrollbar-thumb {background: #9d0808; border-radius: 10px; box-shadow: inset 0 0 5px rgb(0, 0, 0);}
   .grids {display: grids;
             grid-template-columns: 1fr;
-            grid-template-rows: 1.3fr 0.3fr 0.3fr 1.7fr 1.1fr 1.1fr 0.6fr;
+            grid-template-rows: 1.3fr 0.3fr 0.3fr 1.7fr 1.1fr 0.6fr;
             row-gap: 50px;
             grid-auto-flow: row;
             grid-template-areas:"body1""body2""body3""body4""body5""footer";}
@@ -14,8 +14,7 @@ html {scroll-behavior: smooth;}
 .body2 { grid-area: body2; background-color: #000000; margin-top: 5px; height: 80px;}
 .body3 { grid-area: body3; background-image: url(images/00487b29a1a7a566e57ee8af3be5017e.jpg);height: 750px;background-repeat: no-repeat; background-size: cover;color: white;}
 .body4 { grid-area: body4; background-image: url(images/047d112fb8e073cfbce69b9237ff912b.jpg);height: 850px;background-repeat: no-repeat; background-size: cover;color: white;}
-.body5 { grid-area: body4; background-image: url(images/a68cd701f7fa97da191f459304374511.jpg);height: 750px;background-repeat: no-repeat; background-size: cover;color: white;}
-.body6 { grid-area: body4; background-image: url(images/ad0a383540a4c40ce74216ea46123d1a.jpg);height: 750px;background-repeat: no-repeat; background-size: cover;color: white;}
+.body5 { grid-area: body5; background-image: url(images/a68cd701f7fa97da191f459304374511.jpg);height: 750px;background-repeat: no-repeat; background-size: cover;color: white;}
 .footer { grid-area: footer; background-image: url(images/06ac5c07498bd144311de84188c0af7f.jpg);height: 500px;background-repeat: no-repeat; background-size: cover;color: white;}
 
 /* Menu Dropdown */
@@ -142,3 +141,218 @@ b.last-letter {color: #c11111;font-size: 52px;}
 
 .skill-card:nth-child(n) .skill-level{background: #ff4f4f28;border-color: #000000;color: #ffffff;}
 .skill-card:nth-child(2n) .skill-level{background: #99101028;border-color: #ffffff;color: #ffffff;}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {font-family: Roboto;}
+
+.footer-distributed{
+	background: #444;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;height: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  height: 200px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
