@@ -124,9 +124,9 @@ h2.header-for-about {color: #ddcaca;font:22px Lato;text-transform:uppercase;posi
 b.last-letter {color: #c11111;font-size: 52px;}
 
 /* skills */
-.skill-section{position: relative;margin: 100px 0;}
+.skill-section{position: absolute;margin-right: 10px;margin-top: 50px;}
 
-.heading{text-align: center;font-size: 40px;color: #fff;text-transform: capitalize;font-weight: 300;margin-bottom: 100px;}
+.heading{text-align: center;font-size: 40px;color: #fffbfb;text-transform: capitalize;font-weight: 300;margin-bottom: 100px;font-family:Lato;text-decoration: underline 3px white;}
 
 .skills-container{width: 55%;margin: auto;display: grid;grid-template-columns: repeat(3, 1fr);grid-gap: 15px;color: #fff;}
 
