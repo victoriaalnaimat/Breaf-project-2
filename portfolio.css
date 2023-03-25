@@ -1,3 +1,4 @@
+
 .grids {display: grids;
             grid-template-columns: 1fr;
             grid-template-rows: 1.3fr 1.1fr 0.3fr 1.7fr 1.1fr 1.1fr 0.6fr;
@@ -66,7 +67,7 @@ img.my-logo{height: 150px;float: right;position:absolute;border: #ff002b solid 5
 
 /* content */
 .content { background-image : url(images/42a125519a3ffcd127e5ffce6f21a8db.jpg);background-repeat: no-repeat; background-size: cover;height: 750px;}
-.my-pic {display: inline-flex;height: 300px;margin-top: 82px;}
+.my-pic {display: inline-flex;height: 300px;margin-top: 67px;}
 img.me { width : 300px; height : 300px; border-radius : 146px 0px 119px 0px;position:relative;margin-right: 100px;float: left;border: #ec0d32 double 10px;box-shadow: #76071a 15px 13px 12px;left: 52px;}
 .text {margin-top: 25px}
 span.me {font-family: 'Fasthand', cursive;filter:drop-shadow( #f40606 2px 5px 1px);color: #ffffffb2;font-size: 34px;padding: 5px;height: 70px;margin-top: 50px;line-height: 75px;stroke: #000000 1px}
@@ -105,6 +106,6 @@ p.me2:after {filter: blur(50px);}
 @media (max-width: 480px) {
     .parent { grid-template-columns: repeat(1 , 1fr); }}
 
-.gallery { margin-top: 270px;position: absolute;;display:flex ;height: 20rem; gap: 2rem;justify-content: center;text-align: center;margin-left: 10%;}
-img.glry { border-radius: 1rem;flex: 1;width: 100px; opacity: 30%; transition: 0.5s;}
-img.glry:hover { flex: 5;opacity: 1;width: 300px;}
+.gallery { margin-top: 332px;position: absolute;;display:flex;flex-wrap: wrap;height: 23rem; gap: 2rem;justify-content: center;text-align: center;margin-left: 15%;}
+img.glry { border-radius: 1rem;flex: 1;width: 100px; opacity: 30%; transition: 0.5s;border: #ffffff double 10px;}
+img.glry:hover { flex: 5;opacity: 1;width: 300px;border: #ac1111 double 10px;}
