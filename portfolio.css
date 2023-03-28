@@ -6,7 +6,7 @@ html {scroll-behavior: smooth;}
   .grids {display: grids;
             grid-template-columns: 1fr;
             grid-template-rows: 1.3fr 0.3fr 0.3fr 1.7fr 1.1fr 0.6fr;
-            row-gap: 50px;
+            row-gap: 5px;
             grid-auto-flow: row;
             grid-template-areas:"body1""body2""body3""body4""body5""footer";}
 
@@ -71,7 +71,7 @@ img.my-logo{height: 150px;float: right;position:absolute;border: #ff002b solid 5
 /* content */
 .content { background-image : url(images/42a125519a3ffcd127e5ffce6f21a8db.jpg);background-repeat: no-repeat; background-size: cover;height: 750px;}
 .my-pic {display: inline-flex;height: 300px;margin-top: 67px;}
-img.me { width : 300px; height : 300px; border-radius : 146px 0px 119px 0px;position:relative;margin-right: 100px;float: left;border: #ec0d32 double 10px;box-shadow: #76071a 15px 13px 12px;left: 52px;}
+img.me { width : 300px; height : 300px; border-radius : 146px 0px 119px 0px;position:relative;margin-right: 100px;float: left;border: #ec0d32 double 10px;box-shadow: #76071a 15px 13px 12px;left: 52px;object-fit: cover;}
 .text {margin-top: 25px}
 span.me {font-family: 'Fasthand', cursive;filter:drop-shadow( #f40606 2px 5px 1px);color: #ffffffb2;font-size: 34px;padding: 5px;height: 70px;margin-top: 50px;line-height: 75px;stroke: #000000 1px}
 p.me {color: #edeeee; font-family: 'Caveat', cursive;margin-top: 40px;font-size: 20px;}
@@ -106,6 +106,8 @@ p.me2:after {filter: blur(50px);}
 .child:hover {cursor: pointer; color: #721515; background-color: #00000092;}
 @media (max-width: 768px) {
     .parent { grid-template-columns: repeat(2 , 1fr); }}
+	.content ,.body1,.body2,.body3 , .body4 ,.body5,footer{background-image: none;}
+	body {background-color: #000000;}
 
 @media (max-width: 480px) {
     .parent { grid-template-columns: repeat(1 , 1fr); }}
@@ -115,9 +117,9 @@ h2.header-for-gallery {color: #ddcaca;font:22px Lato;text-transform:uppercase;po
 b.last-letter {color: #c11111;font-size: 52px;}
 .gallery { margin-top: 332px;position: absolute;;display:flex;flex-wrap: wrap;height: 23rem; gap: 2rem;justify-content: center;text-align: center;margin-left: 15%;}
 img.glry { border-radius: 1rem;flex: 1;width: 100px; opacity: 30%; transition: 0.5s;border: #ffffff double 10px;}
-img.glry:hover { flex: 5;opacity: 1;width: 300px;border: #ac1111 double 10px;}
-h5.recent {font-family: 'Courier New', Courier, monospace; color: rgb(216, 183, 183); border: beige 2px solid;border-bottom: 2px orange solid; background: rgba(158, 19, 19, 0.171); width: 200px;margin-left: 43px;padding: 5px;margin-bottom: -30px;margin-top: 20px;}
-h2.header-for-about {color: #ddcaca;font:22px Lato;text-transform:uppercase;position: absolute ;right: 234px;margin-top:5px;text-transform:uppercase;letter-spacing: 2px;font-style: italic;}
+img.glry:hover { flex: 5;opacity: 1;width: 300px;border: #ac1111 double 10px;height: 10px;}
+h5.recent {font-family: cursive; color: rgb(216, 183, 183); border: beige 2px solid;border-bottom: 2px orange solid; background: rgba(158, 19, 19, 0.171); width: 200px;margin-left: 43px;padding: 5px;margin-bottom: -30px;margin-top: 20px;font-size: 20px;}
+h2.header-for-about {color: #ddcaca;font:25px Lato;text-transform:uppercase;position: absolute ;right: 234px;margin-top:5px;text-transform:uppercase;letter-spacing: 2px;font-style: italic;}
 .about-mee {list-style-type: circle; font-family: monospace; margin-top:224px;position: absolute;}
 .header-for-about::first-letter {color: #c11111;font-size: 52px;font-weight: bolder;}
 b.last-letter {color: #c11111;font-size: 52px;}
